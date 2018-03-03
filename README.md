@@ -2,7 +2,7 @@ Frogger clone
 ===============================
 
 How to run:
-Double-click index.html to launch the game. Or click this link: https://hari343.github.io/classic_arcade_game/. 
+Double-click index.html to launch the game. Or click this link:  https://hari343.github.io/frogger_clone/. 
 Chrome browser is recommended to play the game.
 
 How to play:
