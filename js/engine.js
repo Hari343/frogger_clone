@@ -10,7 +10,7 @@ let Engine = (function(global) {
 	doc.body.appendChild(canvas);
 
 	function main() {
-		let now = Date.now(),
+		let now = performance.now(),
 			dt = (now - lastTime) / 1000.0;
 
 		update(dt);
@@ -22,7 +22,7 @@ let Engine = (function(global) {
 
 	function init() {
 		reset();
-		lastTime = Date.now();
+		lastTime = performance.now();
 		main();
 	}
 
