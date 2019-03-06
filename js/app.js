@@ -18,7 +18,6 @@ class Enemy {
 		}
 		// Collison detection algorithm
 	    if (((player.x < this.x + 80) && (player.x > this.x - 60)) && ((player.y < this.y + 45) && (player.y > this.y - 45))) {
-	        let laser = new Sound("laser.wav", 0.6);
 	        laser.play();
 	        player.x = 505;
 	        player.y= 639;
@@ -43,7 +42,6 @@ class Player {
 	    if (this.y < 83) {
 	        this.y = 639;
 	        this.x = 505;
-	        let success = new Sound("success.wav", 0.6);
 	        success.play();
 	        award++;
 	    }
@@ -134,6 +132,8 @@ let allStars = [];
 
 let music = new Sound("music.mp3", 0.5, true);
 music.play();
+let laser = new Sound("laser.wav", 0.6);
+let success = new Sound("success.wav", 0.6);
 
 // Keypresses!
 document.addEventListener('keyup', function(e) {
